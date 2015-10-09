@@ -1,0 +1,33 @@
+/*
+ =======================================================================================================================
+ Foundation App Boostrap
+
+ This file loads all the SCSS components for Foundation & NOUVEAU. You should place your own styles into one or more
+ separate .scss files and import your own styles at the bottom of this file.
+ =======================================================================================================================
+*/
+
+// Foundation settings: _settings.scss
+@import "settings";
+
+// Optional: Use NOUVEAU mixins, including image-url() fix
+@import "mixins";
+
+// Optional: Uncomment to use...
+//@import "../../bower_components/foundation/scss/normalize";
+
+// Load all Foundation components...
+@import "../../bower_components/foundation/scss/foundation";
+
+
+// Load NOUVEAU compatibility styles
+@import "wordpress";    
+
+// PLACE YOUR OWN STYLES HERE...
+//@import 'your-styles';
+
+@import "variables";
+@import "typography";
+@import "modules/all";
+@import "modules/menu";
+@import "modules/front";

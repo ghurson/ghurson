@@ -1,0 +1,15 @@
+.home-title {
+  h2 {
+    padding: rem-calc(70 0 0);
+    font-size: rem-calc(25);
+    font-weight: 200;
+  }
+}
+
+.home-hero {
+  height: 400px;
+  width: 100%;
+  background: red;
+  margin: rem-calc(0 0 50);
+  position: relative;
+}
