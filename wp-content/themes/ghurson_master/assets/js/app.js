@@ -9,8 +9,11 @@
 (function($){
 
     // Foundation JavaScript
-
-
-    //Your code goes here
+    $(document).foundation({
+        equalizer : {
+            equalize_on_stack: true,
+            act_on_hidden_el: false
+        }
+    });
 
 })(jQuery);

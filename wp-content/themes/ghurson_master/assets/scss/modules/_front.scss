@@ -1,6 +1,11 @@
+body.home {
+  @include align_center();
+}
+
 .home-title {
   height: 15vh;
   text-align: center;
+  //@include align_center();
 
   h2 {
     font-size: rem-calc(25);
@@ -18,29 +23,55 @@
 }
 
 .home-hero {
-  height: 85vh;
+  height: 68vh;
   background: $shade;
   position: relative;
-
-  .row {
-    min-height: 85vh;
-    @include align_center();
-  }
+  @include align_center();
 
   .card {
 
     position: relative;
-    height: rem-calc(200);
     padding: rem-calc(10);
 
+    .content {
+      padding: rem-calc(10);
+      height: 100%;
+      @include transition_all();
+
+      &:hover {
+
+      }
+
+    }
+
     h3 {
-      font-size: rem-calc(30);
-      font-weight: 100;
-      color: white;
+      font-size: rem-calc(18);
+      font-weight: 400;
+      color: $dark;
+      text-align: center;
+      font-family: $serif;
     }
 
     p {
-      color: white;
+      color: $dark;
+      &:last-of-type {
+        margin: 0;
+      }
+
+    }
+
+    .button {
+      background: transparent;
+      border: 1px solid $dark;
+      color: $dark;
+      text-align: center;
+      font-size: rem-calc(10);
+
+
+      &:hover {
+        background: $dark;
+        color: $shade;
+      }
     }
 
     &:nth-child(1){

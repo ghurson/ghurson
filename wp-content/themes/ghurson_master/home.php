@@ -7,9 +7,5 @@
  */
 \NV\Theme::get_header();
 \NV\Theme::output_file_marker(__FILE__);
-get_template_part("parts/interior/header");
 get_template_part("parts/blog/home");
-
-
-
 \NV\Theme::get_footer();

@@ -1,3 +1,12 @@
 footer {
     min-height: 10vh;
+    clear: both;
+    @include align_bottom();
+
+    p {
+        font-family: $serif;
+        text-align: center;
+        margin: 0;
+    }
+
 }

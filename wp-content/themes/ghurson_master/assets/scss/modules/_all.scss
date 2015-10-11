@@ -23,3 +23,7 @@ h1, h2, h3, h4, h5, h6, p {
   padding: rem-calc(50 0 0);
   min-height: 62vh;
 }
+
+.interior-sidebar {
+  border-right: 1px solid $shade;
+}
