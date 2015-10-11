@@ -1,9 +1,25 @@
+body {
+  font-family: $sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: $sans-serif;
+}
+
 .interior-hero {
-  height: rem-calc(200);
+  height: 18vh;
   width: 100%;
-  background: red;
+  background: $shade;
+  @include align_bottom();
+
+  h2 {
+    text-align: center;
+    color: $dark;
+    margin: 0;
+  }
 }
 
 .interior-content {
   padding: rem-calc(50 0 0);
+  min-height: 62vh;
 }

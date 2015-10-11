@@ -1,6 +1,31 @@
 $white: #ffffff;
 $light: #F5FFDD;
 $alt-light: #A5CBC3;
-$accent : #CFE861;
-$shade: #232838;
+$accent: #CFE861;
+$shade: #D8D9DC;
 $dark: #272727;
+
+@mixin align_bottom() {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+@mixin align_center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+@mixin transition_all(){
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+$sans-serif: 'Source Sans Pro', sans-serif;
+$serif: 'Alegreya', serif;

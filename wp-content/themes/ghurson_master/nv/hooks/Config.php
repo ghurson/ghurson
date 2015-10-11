@@ -103,6 +103,7 @@ class Config {
         // Base stylesheet (compiled SASS)
         wp_enqueue_style( 'app', NV_CSS.'/app.css' );
         wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic', array( 'app' ) );
+        wp_enqueue_style( 'google-fonts-2', 'https://fonts.googleapis.com/css?family=Alegreya:400,400italic,700,700italic', array( 'app' ) );
 
         // WordPress's required styles.css (will override compiled SASS)
         wp_enqueue_style( 'styles', get_bloginfo( 'stylesheet_url' ), array( 'app' ) );
