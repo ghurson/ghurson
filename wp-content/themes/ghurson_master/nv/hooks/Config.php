@@ -103,6 +103,7 @@ class Config {
         // Base stylesheet (compiled SASS)
         wp_enqueue_style( 'app', NV_CSS.'/app.css' );
         wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic', array( 'app' ) );
+        wp_enqueue_style( 'google-fonts-2', 'https://fonts.googleapis.com/css?family=Alegreya:400,400italic,700,700italic', array( 'app' ) );
 
         // WordPress's required styles.css (will override compiled SASS)
         wp_enqueue_style( 'styles', get_bloginfo( 'stylesheet_url' ), array( 'app' ) );
@@ -147,7 +148,7 @@ class Config {
         //wp_enqueue_script( 'zf-alert', NV_ZF_JS.'/foundation/foundation.alert.js', array( 'foundation' ), false, true );
         //wp_enqueue_script( 'zf-clearing', NV_ZF_JS.'/foundation/foundation.clearing.js', array( 'foundation' ), false, true );
         //wp_enqueue_script( 'zf-dropdown', NV_ZF_JS.'/foundation/foundation.dropdown.js', array( 'foundation' ), false, true );
-        //wp_enqueue_script( 'zf-equalizer', NV_ZF_JS.'/foundation/foundation.equalizer.js', array( 'foundation' ), false, true );
+        wp_enqueue_script( 'zf-equalizer', NV_ZF_JS.'/foundation/foundation.equalizer.js', array( 'foundation' ), false, true );
         //wp_enqueue_script( 'zf-interchange', NV_ZF_JS.'/foundation/foundation.equalizer.js', array( 'foundation' ), false, true );
         //wp_enqueue_script( 'zf-joyride', NV_ZF_JS.'/foundation/foundation.joyride.js', array( 'foundation' ), false, true );
         //wp_enqueue_script( 'zf-magellan', NV_ZF_JS.'/foundation/foundation.magellan.js', array( 'foundation' ), false, true );
@@ -162,7 +163,7 @@ class Config {
         // Load any custom javascript (remember to update dependencies if you changed the above)...
         wp_enqueue_script( 
             'theme-app',                                    // uid
-            NV_JS.'/app.min.js',                            // url
+            NV_JS.'/app.js',                            // url
             array( 'jquery', 'foundation', 'modernizr' ),   // dependencies (by uid)
             false,                                          // version id (optional)
             true                                            // load in footer?

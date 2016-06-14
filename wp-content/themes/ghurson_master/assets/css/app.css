@@ -73,7 +73,7 @@ body {
   background: #fff;
   color: #222;
   cursor: auto;
-  font-family: "Source Sans Pro", Helvetica, Roboto, Arial, sans-serif;
+  font-family: Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
@@ -923,7 +923,7 @@ select {
       background: #EFEFEF;
       color: #222222;
       display: block;
-      font-family: "Source Sans Pro", Helvetica, Roboto, Arial, sans-serif;
+      font-family: Helvetica, Roboto, Arial, sans-serif;
       font-size: 1rem;
       padding: 1rem; }
       .accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
@@ -1320,7 +1320,7 @@ button, .button {
   border-style: solid;
   border-width: 0;
   cursor: pointer;
-  font-family: "Source Sans Pro", Helvetica, Roboto, Arial, sans-serif;
+  font-family: Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -3070,7 +3070,7 @@ label.error {
 
 .label {
   display: inline-block;
-  font-family: "Source Sans Pro", Helvetica, Roboto, Arial, sans-serif;
+  font-family: Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1;
   margin-bottom: auto;
@@ -3446,7 +3446,7 @@ ul.pagination {
   .pricing-table .title {
     background-color: #333333;
     color: #EEEEEE;
-    font-family: "Source Sans Pro", Helvetica, Roboto, Arial, sans-serif;
+    font-family: Helvetica, Roboto, Arial, sans-serif;
     font-size: 1rem;
     font-weight: normal;
     padding: 0.9375rem 1.25rem;
@@ -3454,7 +3454,7 @@ ul.pagination {
   .pricing-table .price {
     background-color: #F6F6F6;
     color: #333333;
-    font-family: "Source Sans Pro", Helvetica, Roboto, Arial, sans-serif;
+    font-family: Helvetica, Roboto, Arial, sans-serif;
     font-size: 2rem;
     font-weight: normal;
     padding: 0.9375rem 1.25rem;
@@ -3708,7 +3708,7 @@ ul.pagination {
 
 .side-nav {
   display: block;
-  font-family: "Source Sans Pro", Helvetica, Roboto, Arial, sans-serif;
+  font-family: Helvetica, Roboto, Arial, sans-serif;
   list-style-position: outside;
   list-style-type: none;
   margin: 0;
@@ -3729,7 +3729,7 @@ ul.pagination {
         color: #1cc7ff; }
     .side-nav li.active > a:first-child:not(.button) {
       color: #1cc7ff;
-      font-family: "Source Sans Pro", Helvetica, Roboto, Arial, sans-serif;
+      font-family: Helvetica, Roboto, Arial, sans-serif;
       font-weight: normal; }
     .side-nav li.divider {
       border-top: 1px solid;
@@ -3847,7 +3847,7 @@ ul.pagination {
   .sub-nav dt, .sub-nav dd, .sub-nav li {
     color: #999999;
     float: left;
-    font-family: "Source Sans Pro", Helvetica, Roboto, Arial, sans-serif;
+    font-family: Helvetica, Roboto, Arial, sans-serif;
     font-size: 0.875rem;
     font-weight: normal;
     margin-left: 1rem;
@@ -4022,7 +4022,7 @@ table {
       display: block;
       background-color: #EFEFEF;
       color: #222222;
-      font-family: "Source Sans Pro", Helvetica, Roboto, Arial, sans-serif;
+      font-family: Helvetica, Roboto, Arial, sans-serif;
       font-size: 1rem;
       padding: 1rem 2rem; }
       .tabs dd > a:hover, .tabs .tab-title > a:hover {
@@ -4324,7 +4324,7 @@ meta.foundation-mq-topbar {
     .top-bar-section ul li > a {
       color: #FFFFFF;
       display: block;
-      font-family: "Source Sans Pro", Helvetica, Roboto, Arial, sans-serif;
+      font-family: Helvetica, Roboto, Arial, sans-serif;
       font-size: 0.8125rem;
       font-weight: normal;
       padding-left: 0.9375rem;
@@ -4830,7 +4830,7 @@ p {
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
   color: #222222;
-  font-family: "Source Sans Pro", Helvetica, Roboto, Arial, sans-serif;
+  font-family: Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.4;
@@ -5852,41 +5852,176 @@ th.hide-for-touch {
 .admin-bar .snap-to-top.fixed {
   top: 28px; }
 
+body {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Source Sans Pro', sans-serif; }
+
 .interior-hero {
-  height: 12.5rem;
+  height: 18vh;
   width: 100%;
-  background: red; }
+  background: #D8D9DC;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: flex-end; }
+  .interior-hero h2 {
+    text-align: center;
+    color: #272727;
+    margin: 0; }
 
 .interior-content {
-  padding: 3.125rem 0 0; }
+  padding: 3.125rem 0 0;
+  min-height: 62vh; }
+
+.interior-sidebar {
+  border-right: 1px solid #D8D9DC; }
+
+.button {
+  margin: 0;
+  padding: 0.4375rem 0.3125rem;
+  border-radius: 0.1875rem; }
+
+footer {
+  min-height: 10vh;
+  clear: both;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: flex-end; }
+  footer p {
+    font-family: 'Alegreya', serif;
+    text-align: center;
+    margin: 0; }
 
 .front-menu {
-  position: absolute;
-  background: #232839;
-  margin-bottom: 1px solid #232838;
-  bottom: 0;
-  left: 0;
-  right: 0; }
+  height: 7vh; }
   .front-menu .menu > ul {
     text-align: center;
     margin: 0; }
     .front-menu .menu > ul li {
       display: inline-block; }
       .front-menu .menu > ul li a {
-        padding: 0 0.625rem;
+        padding: 0 1.25rem;
         line-height: 3.4375rem;
-        font-weight: 700; }
+        font-weight: 100;
+        font-size: 1.125rem;
+        color: #272727;
+        text-transform: lowercase;
+        -webkit-transition: all 300ms ease-out;
+        -moz-transition: all 300ms ease-out;
+        -ms-transition: all 300ms ease-out;
+        -o-transition: all 300ms ease-out;
+        transition: all 300ms ease-out; }
+        .front-menu .menu > ul li a:hover {
+          font-weight: 300; }
 
-.home-title h2 {
-  padding: 4.375rem 0 0;
-  font-size: 1.5625rem;
-  font-weight: 200; }
+.interior-sidebar .menu ul {
+  list-style-type: none;
+  margin-left: 0; }
+  .interior-sidebar .menu ul li {
+    text-align: center; }
+    .interior-sidebar .menu ul li.current_page_item a {
+      color: white;
+      background: #D8D9DC; }
+  .interior-sidebar .menu ul a {
+    display: block; }
+    .interior-sidebar .menu ul a:hover {
+      background: #D8D9DC;
+      color: #272727; }
+
+.interior-sidebar {
+  padding: 0; }
+  .interior-sidebar h4 {
+    color: #272727;
+    text-align: center;
+    font-family: 'Alegreya', serif;
+    line-height: 2.8125rem;
+    margin: 0;
+    padding-top: 3.125rem; }
+
+body.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+
+.home-title {
+  height: 15vh;
+  text-align: center; }
+  .home-title h2 {
+    font-size: 1.5625rem;
+    font-weight: 200;
+    color: #272727;
+    margin: 0;
+    font-family: 'Alegreya', serif; }
+  .home-title p {
+    font-weight: 100;
+    color: #272727;
+    font-family: 'Alegreya', serif; }
 
 .home-hero {
-  height: 400px;
-  width: 100%;
-  background: #232838;
-  margin: 0 0 3.125rem;
-  position: relative; }
+  height: 68vh;
+  background: #D8D9DC;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+  .home-hero .card {
+    position: relative;
+    padding: 0.625rem; }
+    .home-hero .card .content {
+      padding: 0.625rem;
+      height: 100%;
+      -webkit-transition: all 300ms ease-out;
+      -moz-transition: all 300ms ease-out;
+      -ms-transition: all 300ms ease-out;
+      -o-transition: all 300ms ease-out;
+      transition: all 300ms ease-out; }
+    .home-hero .card h3 {
+      font-size: 1.125rem;
+      font-weight: 400;
+      color: #272727;
+      text-align: center;
+      font-family: 'Alegreya', serif; }
+    .home-hero .card p {
+      color: #272727; }
+      .home-hero .card p:last-of-type {
+        margin: 0; }
+    .home-hero .card .button {
+      background: transparent;
+      border: 1px solid #272727;
+      color: #272727;
+      text-align: center;
+      font-size: 0.625rem; }
+      .home-hero .card .button:hover {
+        background: #272727;
+        color: #D8D9DC; }
+    .home-hero .card:nth-child(1) {
+      border-right: 1px solid white;
+      border-bottom: 1px solid white; }
+    .home-hero .card:nth-child(2) {
+      border-bottom: 1px solid white; }
+    .home-hero .card:nth-child(3) {
+      border-right: 1px solid white; }
+
+#footer {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: flex-end; }
+  #footer p {
+    font-weight: 100; }
+
+.interior-content {
+  min-height: 90vh; }
+  .interior-content .title {
+    font-family: 'Alegreya', serif;
+    font-size: 1.4375rem;
+    line-height: 2.8125rem;
+    margin: 0; }
 
 /*# sourceMappingURL=app.css.map */
